@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f214989e-55c3-4c69-93d1-fbdeccc9c53b" name="Default" comment="" />
+    <list default="true" id="f214989e-55c3-4c69-93d1-fbdeccc9c53b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/personalsite/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/personalsite/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/personalsite/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/personalsite/templates/layout.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +21,8 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/personalsite/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -83,8 +87,8 @@
       <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/personalsite/templates/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="39" column="80" selection-start-line="39" selection-start-column="80" selection-end-line="39" selection-end-column="80" />
+            <state relative-caret-position="195">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -141,6 +145,9 @@
       <find>url_for</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -186,13 +193,13 @@
         <option value="$PROJECT_DIR$/personalsite/templates/login.html" />
         <option value="$PROJECT_DIR$/personalsite/static/main.css" />
         <option value="$PROJECT_DIR$/run.py" />
-        <option value="$PROJECT_DIR$/personalsite/templates/layout.html" />
         <option value="$PROJECT_DIR$/personalsite/users/routes.py" />
         <option value="$PROJECT_DIR$/personalsite/templates/home.html" />
         <option value="$PROJECT_DIR$/personalsite/templates/blog.html" />
         <option value="$PROJECT_DIR$/personalsite/templates/post.html" />
         <option value="$PROJECT_DIR$/personalsite/posts/routes.py" />
         <option value="$PROJECT_DIR$/personalsite/main/routes.py" />
+        <option value="$PROJECT_DIR$/personalsite/templates/layout.html" />
         <option value="$PROJECT_DIR$/personalsite/__init__.py" />
       </list>
     </option>
@@ -211,6 +218,7 @@
     <option name="width" value="697" />
     <option name="height" value="802" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -303,7 +311,7 @@
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8042453" visible="true" weight="0.16944444" />
@@ -501,13 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/personalsite/templates/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="39" column="80" selection-start-line="39" selection-start-column="80" selection-end-line="39" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/personalsite/templates/account.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -597,10 +598,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/personalsite/__init__.py">
+    <entry file="file://$PROJECT_DIR$/personalsite/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personalsite/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>

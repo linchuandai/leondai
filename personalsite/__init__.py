@@ -5,15 +5,12 @@ from flask_login import LoginManager
 from flask_mail import Mail
 #from personalsite.config import Config
 
-from flask.ext.heroku import Heroku
 
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = '7f0c2f57938476cca8a1b7a88854b3c8'
 
-heroku = Heroku(app)
-
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 login_manager = LoginManager(app)
