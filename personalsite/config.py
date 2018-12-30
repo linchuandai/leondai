@@ -1,20 +1,41 @@
 import os
 
-class Config:
+base_dir = os.path.abspath(os.path.dirname(__file__))
+postgres_local_base = 'postgresql://postgres:123456@localhost/'
+database_name = 'api'
 
-    SECRET_KEY = '7f0c2f57938476cca8a1b7a88854b3c8'
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///site.db'
 
-    #SECRET_KEY = os.environ.get('SECRET_KEY')
-    #SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI')
+class BaseConfig:
+    """
+    Base application configuration
+    """
+    DEBUG = False
+    SECRET_KEY = '5791628bb0b13ce0c676dfde280ba245'
+    LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')
 
-    #print ('###############################################')
-    #print (SECRET_KEY)
-    #print ('###############################################')
 
-    MAIL_SERVER = 'smtp.googlemail.com'
-    MAIL_PORT = 587
-    MAIL_USE_TLS = True
+class DevelopmentConfig(BaseConfig):
+    """
+    Development application configuration
+    """
+    DEBUG = True
+    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', postgres_local_base + database_name)
 
-    # MAIL_USERNAME = os.environ.get('EMAIL_USER')
-    # MAIL_PASSWORD = os.environ.get('EMAIL_PASS')
+
+
+class TestingConfig(BaseConfig):
+    """
+    Testing application configuration
+    """
+    DEBUG = True
+    TESTING = True
+    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL_TEST', postgres_local_base + database_name + "_test")
+
+
+
+class ProductionConfig(BaseConfig):
+    """
+    Production application configuration
+    """
+    DEBUG = True
+    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', postgres_local_base + database_name)
