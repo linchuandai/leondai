@@ -1,4 +1,4 @@
-from personalsite import app
+from app import app
 
 #app = create_app()
 

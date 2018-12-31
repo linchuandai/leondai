@@ -1,24 +1,17 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 from flask_mail import Mail
-import os
-#from personalsite.config import Config
+from config import Config
 
 
 app = Flask(__name__)
-
-# app configuration
-app_settings = os.getenv(
-    'APP_SETTINGS',
-    'personalsite.config.DevelopmentConfig'
-)
-app.config.from_object(app_settings)
-
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+app.config.from_object(Config)
 
 db = SQLAlchemy(app)
+migrate = Migrate(app, db)
 bcrypt = Bcrypt(app)
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
@@ -27,10 +20,10 @@ login_manager.login_message_category = 'info'
 mail = Mail(app)
 
 
-from personalsite.users.routes import users
-from personalsite.posts.routes import posts
-from personalsite.main.routes import main
-from personalsite.errors.handlers import errors
+from app.users.routes import users
+from app.posts.routes import posts
+from app.main.routes import main
+from app.errors.handlers import errors
 
 app.register_blueprint(users)
 app.register_blueprint(posts)
